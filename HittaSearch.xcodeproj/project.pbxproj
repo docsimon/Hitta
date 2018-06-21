@@ -18,6 +18,8 @@
 		CAC994AA20DBFACB005B259D /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994A920DBFACB005B259D /* URLSessionDataTaskProtocol.swift */; };
 		CAC994AC20DBFAFA005B259D /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994AB20DBFAFA005B259D /* URLSessionDataTaskMock.swift */; };
 		CAC994AE20DBFB22005B259D /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994AD20DBFB22005B259D /* MockURLSession.swift */; };
+		CAC994B020DBFBB7005B259D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994AF20DBFBB7005B259D /* Client.swift */; };
+		CAC994B220DBFCB8005B259D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994B120DBFCB8005B259D /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		CAC994A920DBFACB005B259D /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		CAC994AB20DBFAFA005B259D /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 		CAC994AD20DBFB22005B259D /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		CAC994AF20DBFBB7005B259D /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		CAC994B120DBFCB8005B259D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,6 @@
 		CAC9947120DBF842005B259D /* HittaSearch */ = {
 			isa = PBXGroup;
 			children = (
-				CAC994A420DBF8F6005B259D /* TestModel */,
 				CAC994A320DBF89D005B259D /* Model */,
 				CAC994A220DBF895005B259D /* View */,
 				CAC994A120DBF889005B259D /* ViewModel */,
@@ -162,6 +165,9 @@
 		CAC994A320DBF89D005B259D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CAC994A420DBF8F6005B259D /* TestModel */,
+				CAC994AF20DBFBB7005B259D /* Client.swift */,
+				CAC994B120DBFCB8005B259D /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,9 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC994AE20DBFB22005B259D /* MockURLSession.swift in Sources */,
+				CAC994B020DBFBB7005B259D /* Client.swift in Sources */,
 				CAC994A820DBFA9D005B259D /* URLSessionProtocol.swift in Sources */,
 				CAC9947520DBF842005B259D /* ViewController.swift in Sources */,
 				CAC994AA20DBFACB005B259D /* URLSessionDataTaskProtocol.swift in Sources */,
+				CAC994B220DBFCB8005B259D /* DataModel.swift in Sources */,
 				CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */,
 				CAC994AC20DBFAFA005B259D /* URLSessionDataTaskMock.swift in Sources */,
 			);
