@@ -24,7 +24,7 @@ class Client {
         self.request = request
     }
     
-    func getData(request: URLRequest, completion: (_ result: () throws -> Result<Any>) -> Void ){
+    func getData(request: URLRequest, completion: (_ result: () throws -> Result<SearchResult>) -> Void ){
         
         session.dataTask(with: request, completionHandler: {data, result, error in
             

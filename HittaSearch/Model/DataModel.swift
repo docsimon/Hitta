@@ -24,3 +24,28 @@ enum Result<T> {
     case Success(result: T)
     case Error(errorType: ErrorType)
 }
+
+
+// Json Data Structure
+
+struct SearchResult: Decodable {
+    let result: ResultJson
+}
+
+struct ResultJson: Decodable {
+    let companies: Companies
+}
+
+struct Companies: Decodable {
+    let company: [Company]
+}
+
+struct Company: Decodable {
+    let displayName: String
+    let address: [Address]
+}
+
+struct Address: Decodable {
+    let city: String
+    let street: String
+}
