@@ -14,6 +14,10 @@
 		CAC9947D20DBF843005B259D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */; };
 		CAC9948820DBF844005B259D /* HittaSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9948720DBF844005B259D /* HittaSearchTests.swift */; };
 		CAC9949320DBF844005B259D /* HittaSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9949220DBF844005B259D /* HittaSearchUITests.swift */; };
+		CAC994A820DBFA9D005B259D /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994A720DBFA9D005B259D /* URLSessionProtocol.swift */; };
+		CAC994AA20DBFACB005B259D /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994A920DBFACB005B259D /* URLSessionDataTaskProtocol.swift */; };
+		CAC994AC20DBFAFA005B259D /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994AB20DBFAFA005B259D /* URLSessionDataTaskMock.swift */; };
+		CAC994AE20DBFB22005B259D /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC994AD20DBFB22005B259D /* MockURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		CAC9948E20DBF844005B259D /* HittaSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HittaSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC9949220DBF844005B259D /* HittaSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HittaSearchUITests.swift; sourceTree = "<group>"; };
 		CAC9949420DBF844005B259D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC994A720DBFA9D005B259D /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		CAC994A920DBFACB005B259D /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		CAC994AB20DBFAFA005B259D /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
+		CAC994AD20DBFB22005B259D /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +105,11 @@
 		CAC9947120DBF842005B259D /* HittaSearch */ = {
 			isa = PBXGroup;
 			children = (
-				CAC9947220DBF842005B259D /* AppDelegate.swift */,
-				CAC9947420DBF842005B259D /* ViewController.swift */,
-				CAC9947620DBF842005B259D /* Main.storyboard */,
-				CAC9947920DBF843005B259D /* Assets.xcassets */,
-				CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */,
+				CAC994A420DBF8F6005B259D /* TestModel */,
+				CAC994A320DBF89D005B259D /* Model */,
+				CAC994A220DBF895005B259D /* View */,
+				CAC994A120DBF889005B259D /* ViewModel */,
+				CAC994A020DBF85E005B259D /* Support */,
 				CAC9947E20DBF843005B259D /* Info.plist */,
 			);
 			path = HittaSearch;
@@ -123,6 +131,50 @@
 				CAC9949420DBF844005B259D /* Info.plist */,
 			);
 			path = HittaSearchUITests;
+			sourceTree = "<group>";
+		};
+		CAC994A020DBF85E005B259D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9947220DBF842005B259D /* AppDelegate.swift */,
+				CAC9947620DBF842005B259D /* Main.storyboard */,
+				CAC9947920DBF843005B259D /* Assets.xcassets */,
+				CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CAC994A120DBF889005B259D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CAC994A220DBF895005B259D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9947420DBF842005B259D /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAC994A320DBF89D005B259D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAC994A420DBF8F6005B259D /* TestModel */ = {
+			isa = PBXGroup;
+			children = (
+				CAC994A720DBFA9D005B259D /* URLSessionProtocol.swift */,
+				CAC994A920DBFACB005B259D /* URLSessionDataTaskProtocol.swift */,
+				CAC994AB20DBFAFA005B259D /* URLSessionDataTaskMock.swift */,
+				CAC994AD20DBFB22005B259D /* MockURLSession.swift */,
+			);
+			path = TestModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC994AE20DBFB22005B259D /* MockURLSession.swift in Sources */,
+				CAC994A820DBFA9D005B259D /* URLSessionProtocol.swift in Sources */,
 				CAC9947520DBF842005B259D /* ViewController.swift in Sources */,
+				CAC994AA20DBFACB005B259D /* URLSessionDataTaskProtocol.swift in Sources */,
 				CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */,
+				CAC994AC20DBFAFA005B259D /* URLSessionDataTaskMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
