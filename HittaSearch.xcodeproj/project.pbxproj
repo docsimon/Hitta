@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947220DBF842005B259D /* AppDelegate.swift */; };
+		CAC9947520DBF842005B259D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947420DBF842005B259D /* ViewController.swift */; };
+		CAC9947820DBF842005B259D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947620DBF842005B259D /* Main.storyboard */; };
+		CAC9947A20DBF843005B259D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947920DBF843005B259D /* Assets.xcassets */; };
+		CAC9947D20DBF843005B259D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */; };
+		CAC9948820DBF844005B259D /* HittaSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9948720DBF844005B259D /* HittaSearchTests.swift */; };
+		CAC9949320DBF844005B259D /* HittaSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9949220DBF844005B259D /* HittaSearchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAC9948420DBF844005B259D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC9946720DBF842005B259D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAC9946E20DBF842005B259D;
+			remoteInfo = HittaSearch;
+		};
+		CAC9948F20DBF844005B259D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC9946720DBF842005B259D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAC9946E20DBF842005B259D;
+			remoteInfo = HittaSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAC9946F20DBF842005B259D /* HittaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HittaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC9947220DBF842005B259D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAC9947420DBF842005B259D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAC9947720DBF842005B259D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAC9947920DBF843005B259D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAC9947C20DBF843005B259D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAC9947E20DBF843005B259D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC9948320DBF844005B259D /* HittaSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HittaSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC9948720DBF844005B259D /* HittaSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HittaSearchTests.swift; sourceTree = "<group>"; };
+		CAC9948920DBF844005B259D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC9948E20DBF844005B259D /* HittaSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HittaSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC9949220DBF844005B259D /* HittaSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HittaSearchUITests.swift; sourceTree = "<group>"; };
+		CAC9949420DBF844005B259D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAC9946C20DBF842005B259D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC9948020DBF844005B259D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC9948B20DBF844005B259D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAC9946620DBF842005B259D = {
+			isa = PBXGroup;
+			children = (
+				CAC9947120DBF842005B259D /* HittaSearch */,
+				CAC9948620DBF844005B259D /* HittaSearchTests */,
+				CAC9949120DBF844005B259D /* HittaSearchUITests */,
+				CAC9947020DBF842005B259D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAC9947020DBF842005B259D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9946F20DBF842005B259D /* HittaSearch.app */,
+				CAC9948320DBF844005B259D /* HittaSearchTests.xctest */,
+				CAC9948E20DBF844005B259D /* HittaSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC9947120DBF842005B259D /* HittaSearch */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9947220DBF842005B259D /* AppDelegate.swift */,
+				CAC9947420DBF842005B259D /* ViewController.swift */,
+				CAC9947620DBF842005B259D /* Main.storyboard */,
+				CAC9947920DBF843005B259D /* Assets.xcassets */,
+				CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */,
+				CAC9947E20DBF843005B259D /* Info.plist */,
+			);
+			path = HittaSearch;
+			sourceTree = "<group>";
+		};
+		CAC9948620DBF844005B259D /* HittaSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9948720DBF844005B259D /* HittaSearchTests.swift */,
+				CAC9948920DBF844005B259D /* Info.plist */,
+			);
+			path = HittaSearchTests;
+			sourceTree = "<group>";
+		};
+		CAC9949120DBF844005B259D /* HittaSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9949220DBF844005B259D /* HittaSearchUITests.swift */,
+				CAC9949420DBF844005B259D /* Info.plist */,
+			);
+			path = HittaSearchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAC9946E20DBF842005B259D /* HittaSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC9949720DBF844005B259D /* Build configuration list for PBXNativeTarget "HittaSearch" */;
+			buildPhases = (
+				CAC9946B20DBF842005B259D /* Sources */,
+				CAC9946C20DBF842005B259D /* Frameworks */,
+				CAC9946D20DBF842005B259D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HittaSearch;
+			productName = HittaSearch;
+			productReference = CAC9946F20DBF842005B259D /* HittaSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAC9948220DBF844005B259D /* HittaSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC9949A20DBF844005B259D /* Build configuration list for PBXNativeTarget "HittaSearchTests" */;
+			buildPhases = (
+				CAC9947F20DBF844005B259D /* Sources */,
+				CAC9948020DBF844005B259D /* Frameworks */,
+				CAC9948120DBF844005B259D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAC9948520DBF844005B259D /* PBXTargetDependency */,
+			);
+			name = HittaSearchTests;
+			productName = HittaSearchTests;
+			productReference = CAC9948320DBF844005B259D /* HittaSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAC9948D20DBF844005B259D /* HittaSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC9949D20DBF844005B259D /* Build configuration list for PBXNativeTarget "HittaSearchUITests" */;
+			buildPhases = (
+				CAC9948A20DBF844005B259D /* Sources */,
+				CAC9948B20DBF844005B259D /* Frameworks */,
+				CAC9948C20DBF844005B259D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAC9949020DBF844005B259D /* PBXTargetDependency */,
+			);
+			name = HittaSearchUITests;
+			productName = HittaSearchUITests;
+			productReference = CAC9948E20DBF844005B259D /* HittaSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAC9946720DBF842005B259D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Simone Barbara";
+				TargetAttributes = {
+					CAC9946E20DBF842005B259D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CAC9948220DBF844005B259D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CAC9946E20DBF842005B259D;
+					};
+					CAC9948D20DBF844005B259D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CAC9946E20DBF842005B259D;
+					};
+				};
+			};
+			buildConfigurationList = CAC9946A20DBF842005B259D /* Build configuration list for PBXProject "HittaSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAC9946620DBF842005B259D;
+			productRefGroup = CAC9947020DBF842005B259D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAC9946E20DBF842005B259D /* HittaSearch */,
+				CAC9948220DBF844005B259D /* HittaSearchTests */,
+				CAC9948D20DBF844005B259D /* HittaSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAC9946D20DBF842005B259D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC9947D20DBF843005B259D /* LaunchScreen.storyboard in Resources */,
+				CAC9947A20DBF843005B259D /* Assets.xcassets in Resources */,
+				CAC9947820DBF842005B259D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC9948120DBF844005B259D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC9948C20DBF844005B259D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAC9946B20DBF842005B259D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC9947520DBF842005B259D /* ViewController.swift in Sources */,
+				CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC9947F20DBF844005B259D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC9948820DBF844005B259D /* HittaSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC9948A20DBF844005B259D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC9949320DBF844005B259D /* HittaSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAC9948520DBF844005B259D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAC9946E20DBF842005B259D /* HittaSearch */;
+			targetProxy = CAC9948420DBF844005B259D /* PBXContainerItemProxy */;
+		};
+		CAC9949020DBF844005B259D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAC9946E20DBF842005B259D /* HittaSearch */;
+			targetProxy = CAC9948F20DBF844005B259D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAC9947620DBF842005B259D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC9947720DBF842005B259D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC9947C20DBF843005B259D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAC9949520DBF844005B259D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAC9949620DBF844005B259D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAC9949820DBF844005B259D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = HittaSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simone.barbara.example.com.HittaSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAC9949920DBF844005B259D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = HittaSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simone.barbara.example.com.HittaSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAC9949B20DBF844005B259D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = HittaSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simone.barbara.example.com.HittaSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HittaSearch.app/HittaSearch";
+			};
+			name = Debug;
+		};
+		CAC9949C20DBF844005B259D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = HittaSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simone.barbara.example.com.HittaSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HittaSearch.app/HittaSearch";
+			};
+			name = Release;
+		};
+		CAC9949E20DBF844005B259D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = HittaSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simone.barbara.example.com.HittaSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HittaSearch;
+			};
+			name = Debug;
+		};
+		CAC9949F20DBF844005B259D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = HittaSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simone.barbara.example.com.HittaSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HittaSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAC9946A20DBF842005B259D /* Build configuration list for PBXProject "HittaSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC9949520DBF844005B259D /* Debug */,
+				CAC9949620DBF844005B259D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC9949720DBF844005B259D /* Build configuration list for PBXNativeTarget "HittaSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC9949820DBF844005B259D /* Debug */,
+				CAC9949920DBF844005B259D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC9949A20DBF844005B259D /* Build configuration list for PBXNativeTarget "HittaSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC9949B20DBF844005B259D /* Debug */,
+				CAC9949C20DBF844005B259D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC9949D20DBF844005B259D /* Build configuration list for PBXNativeTarget "HittaSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC9949E20DBF844005B259D /* Debug */,
+				CAC9949F20DBF844005B259D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAC9946720DBF842005B259D /* Project object */;
+}
