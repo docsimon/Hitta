@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA64BD4C20DCF679008CDC8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD4B20DCF679008CDC8D /* Constants.swift */; };
+		CA64BD5420DCFA06008CDC8D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD5320DCFA06008CDC8D /* NetworkingTests.swift */; };
 		CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947220DBF842005B259D /* AppDelegate.swift */; };
 		CAC9947520DBF842005B259D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947420DBF842005B259D /* ViewController.swift */; };
 		CAC9947820DBF842005B259D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947620DBF842005B259D /* Main.storyboard */; };
@@ -24,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CA64BD5620DCFA06008CDC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC9946720DBF842005B259D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAC9946E20DBF842005B259D;
+			remoteInfo = HittaSearch;
+		};
 		CAC9948420DBF844005B259D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CAC9946720DBF842005B259D /* Project object */;
@@ -41,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA64BD4B20DCF679008CDC8D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CA64BD5120DCFA06008CDC8D /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA64BD5320DCFA06008CDC8D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		CA64BD5520DCFA06008CDC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAC9946F20DBF842005B259D /* HittaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HittaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC9947220DBF842005B259D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC9947420DBF842005B259D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA64BD4E20DCFA06008CDC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CAC9946C20DBF842005B259D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,12 +108,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA64BD5220DCFA06008CDC8D /* NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA64BD5320DCFA06008CDC8D /* NetworkingTests.swift */,
+				CA64BD5520DCFA06008CDC8D /* Info.plist */,
+			);
+			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
 		CAC9946620DBF842005B259D = {
 			isa = PBXGroup;
 			children = (
 				CAC9947120DBF842005B259D /* HittaSearch */,
 				CAC9948620DBF844005B259D /* HittaSearchTests */,
 				CAC9949120DBF844005B259D /* HittaSearchUITests */,
+				CA64BD5220DCFA06008CDC8D /* NetworkingTests */,
 				CAC9947020DBF842005B259D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +134,7 @@
 				CAC9946F20DBF842005B259D /* HittaSearch.app */,
 				CAC9948320DBF844005B259D /* HittaSearchTests.xctest */,
 				CAC9948E20DBF844005B259D /* HittaSearchUITests.xctest */,
+				CA64BD5120DCFA06008CDC8D /* NetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +201,7 @@
 				CAC994A420DBF8F6005B259D /* TestModel */,
 				CAC994AF20DBFBB7005B259D /* Client.swift */,
 				CAC994B120DBFCB8005B259D /* DataModel.swift */,
+				CA64BD4B20DCF679008CDC8D /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +221,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA64BD5020DCFA06008CDC8D /* NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA64BD5820DCFA06008CDC8D /* Build configuration list for PBXNativeTarget "NetworkingTests" */;
+			buildPhases = (
+				CA64BD4D20DCFA06008CDC8D /* Sources */,
+				CA64BD4E20DCFA06008CDC8D /* Frameworks */,
+				CA64BD4F20DCFA06008CDC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA64BD5720DCFA06008CDC8D /* PBXTargetDependency */,
+			);
+			name = NetworkingTests;
+			productName = NetworkingTests;
+			productReference = CA64BD5120DCFA06008CDC8D /* NetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CAC9946E20DBF842005B259D /* HittaSearch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAC9949720DBF844005B259D /* Build configuration list for PBXNativeTarget "HittaSearch" */;
@@ -252,6 +302,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Simone Barbara";
 				TargetAttributes = {
+					CA64BD5020DCFA06008CDC8D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CAC9946E20DBF842005B259D;
+					};
 					CAC9946E20DBF842005B259D = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -281,11 +335,19 @@
 				CAC9946E20DBF842005B259D /* HittaSearch */,
 				CAC9948220DBF844005B259D /* HittaSearchTests */,
 				CAC9948D20DBF844005B259D /* HittaSearchUITests */,
+				CA64BD5020DCFA06008CDC8D /* NetworkingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA64BD4F20DCFA06008CDC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CAC9946D20DBF842005B259D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,6 +376,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA64BD4D20DCFA06008CDC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA64BD5420DCFA06008CDC8D /* NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CAC9946B20DBF842005B259D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +396,7 @@
 				CAC994B220DBFCB8005B259D /* DataModel.swift in Sources */,
 				CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */,
 				CAC994AC20DBFAFA005B259D /* URLSessionDataTaskMock.swift in Sources */,
+				CA64BD4C20DCF679008CDC8D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +419,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CA64BD5720DCFA06008CDC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAC9946E20DBF842005B259D /* HittaSearch */;
+			targetProxy = CA64BD5620DCFA06008CDC8D /* PBXContainerItemProxy */;
+		};
 		CAC9948520DBF844005B259D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CAC9946E20DBF842005B259D /* HittaSearch */;
@@ -380,6 +456,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CA64BD5920DCFA06008CDC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = NetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simone.barbara.example.com.NetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HittaSearch.app/HittaSearch";
+			};
+			name = Debug;
+		};
+		CA64BD5A20DCFA06008CDC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = NetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simone.barbara.example.com.NetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HittaSearch.app/HittaSearch";
+			};
+			name = Release;
+		};
 		CAC9949520DBF844005B259D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,6 +731,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA64BD5820DCFA06008CDC8D /* Build configuration list for PBXNativeTarget "NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA64BD5920DCFA06008CDC8D /* Debug */,
+				CA64BD5A20DCFA06008CDC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CAC9946A20DBF842005B259D /* Build configuration list for PBXProject "HittaSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
