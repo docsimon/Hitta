@@ -18,6 +18,12 @@ enum ErrorType: Error {
     case DefaultError(error: String)
 }
 
+struct ErrorData{
+    let errorTitle: String
+    let errorMsg: String
+}
+
+
 // Result Type
 
 enum Result<T> {

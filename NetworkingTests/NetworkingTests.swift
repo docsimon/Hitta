@@ -143,7 +143,7 @@ class NetworkingTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
         let client = Client<SearchResult>(session: mockSession, request: request)
-        client.getData(request: request, completion: { resultClosure in
+        client.getData(completion: { resultClosure in
             do {
                 let searchResult = try resultClosure()
                 
@@ -177,7 +177,7 @@ class NetworkingTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
         let client = Client<SearchResult>(session: mockSession, request: request)
-        client.getData(request: request, completion: { resultClosure in
+        client.getData(completion: { resultClosure in
             do {
                 let _ = try resultClosure()
                 XCTFail("Shouldn't reach this point")
@@ -203,7 +203,7 @@ class NetworkingTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
         let client = Client<SearchResult>(session: mockSession, request: request)
-        client.getData(request: request, completion: { resultClosure in
+        client.getData(completion: { resultClosure in
             do {
                 let _ = try resultClosure()
                 XCTFail("Shouldn't reach this point")
@@ -229,12 +229,12 @@ class NetworkingTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
         let client = Client<SearchResult>(session: mockSession, request: request)
-        client.getData(request: request, completion: { resultClosure in
+        client.getData(completion: { resultClosure in
             do {
                 let _ = try resultClosure()
                 XCTFail("Shouldn't reach this point")
             }catch ErrorType.DataError(let wrongDataMsg){
-                XCTAssertTrue(wrongDataMsg == Constants.ErrorMessages.DataErrors.InvalidDataReceived)
+                XCTAssertTrue(wrongDataMsg == Constants.ErrorMessages.InvalidDataReceived)
             }catch {
                 XCTFail("Shouldn't reach this point")
             }
@@ -258,7 +258,7 @@ class NetworkingTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
         let client = Client<SearchResult>(session: mockSession, request: request)
-        client.getData(request: request, completion: { resultClosure in
+        client.getData(completion: { resultClosure in
             do {
                 let _ = try resultClosure()
                 

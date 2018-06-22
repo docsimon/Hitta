@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkingTests/NetworkingTests.swift"
-            timestampString = "551373533.918313"
+            timestampString = "551382740.399601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "283"
-            endingLineNumber = "283"
+            startingLineNumber = "268"
+            endingLineNumber = "268"
             landmarkName = "testClientReturnsNotValidResult()"
             landmarkType = "7">
          </BreakpointContent>

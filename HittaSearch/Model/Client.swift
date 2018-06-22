@@ -12,7 +12,7 @@ import Foundation
 // 1. The Session, which is used both for the actual connection and the test
 // 2. The request (URLRequest)
 
-// The Client connects to the remote endpoint, fetches the JSON and deserialize it. The result can be a struct with the deserialized data on success, or an error (Result<T> type)
+// The Client connects to the remote endpoint, fetches the JSON and deserialize it. The result can be a generic struct (conforming to Decodable) with the deserialized data on success, or an error
 
 class Client<T: Decodable> {
     
@@ -24,7 +24,7 @@ class Client<T: Decodable> {
         self.request = request
     }
     
-    func getData(request: URLRequest, completion: @escaping (_ result: () throws -> T) -> () ){
+    func getData(completion: @escaping (_ result: () throws -> T) -> () ){
         
         session.dataTask(with: request, completionHandler: {data, response, error in
             
@@ -53,7 +53,7 @@ class Client<T: Decodable> {
             guard let data = data else {
                 completion(
                     {
-                        throw  ErrorType.DataError(error: Constants.ErrorMessages.DataErrors.InvalidDataReceived)
+                        throw  ErrorType.DataError(error: Constants.ErrorMessages.InvalidDataReceived)
                     }
                 )
                 return
