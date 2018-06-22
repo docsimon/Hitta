@@ -142,25 +142,20 @@ class NetworkingTests: XCTestCase {
         
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
-        let client = Client(session: mockSession, request: request)
+        let client = Client<SearchResult>(session: mockSession, request: request)
         client.getData(request: request, completion: { resultClosure in
             do {
-                let result = try resultClosure()
+                let searchResult = try resultClosure()
                 
-                switch (result) {
-                case .Success(let searchResult):
-                    let companyName = searchResult.result.companies.company[0].displayName
+                
+               
+                let companyName = searchResult.result.companies.company[0].displayName
                     let street = searchResult.result.companies.company[0].address[0].street
                     let city = searchResult.result.companies.company[0].address[0].city
                     XCTAssertTrue(companyName == "Ica Maxi Special AB")
                     XCTAssertTrue(street == "Gamla Flygplatsvägen")
                     XCTAssertTrue(city == "Torslanda")
-                }
-//
-//                case .Error(errorType: let error):
-//                    XCTFail("Shouldn't fail just now \(error.localizedDescription)")
-//                }
-//
+                
             }catch {
                 XCTFail("Shouldn't fail here \(error.localizedDescription)")
             }
@@ -181,7 +176,7 @@ class NetworkingTests: XCTestCase {
         
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
-        let client = Client(session: mockSession, request: request)
+        let client = Client<SearchResult>(session: mockSession, request: request)
         client.getData(request: request, completion: { resultClosure in
             do {
                 let _ = try resultClosure()
@@ -207,7 +202,7 @@ class NetworkingTests: XCTestCase {
         let mockSession = MockURLSession(data: nil, response: mockResponse, error: nil)
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
-        let client = Client(session: mockSession, request: request)
+        let client = Client<SearchResult>(session: mockSession, request: request)
         client.getData(request: request, completion: { resultClosure in
             do {
                 let _ = try resultClosure()
@@ -233,7 +228,7 @@ class NetworkingTests: XCTestCase {
         let mockSession = MockURLSession(data: nil, response: mockResponse, error: nil)
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
-        let client = Client(session: mockSession, request: request)
+        let client = Client<SearchResult>(session: mockSession, request: request)
         client.getData(request: request, completion: { resultClosure in
             do {
                 let _ = try resultClosure()
@@ -262,7 +257,7 @@ class NetworkingTests: XCTestCase {
         
         
         let expectation = XCTestExpectation(description: "Testing Mock Client Session")
-        let client = Client(session: mockSession, request: request)
+        let client = Client<SearchResult>(session: mockSession, request: request)
         client.getData(request: request, completion: { resultClosure in
             do {
                 let _ = try resultClosure()
@@ -281,7 +276,7 @@ class NetworkingTests: XCTestCase {
         // Valid test
         let apiUrl = URL(string: "https://www.hitta.se")!
         let request = URLRequest(url: apiUrl)
-        let client = Client(request: request)
+        let client = Client<SearchResult>(request: request)
         let code = 200
         let isValid = client.statusCodeIsValid(code: code)
         XCTAssertTrue(isValid)
@@ -292,7 +287,7 @@ class NetworkingTests: XCTestCase {
         // Not Valid test
         let apiUrl = URL(string: "https://www.hitta.se")!
         let request = URLRequest(url: apiUrl)
-        let client = Client(request: request)
+        let client = Client<SearchResult>(request: request)
         let code = 404
         let isValid = client.statusCodeIsValid(code: code)
         XCTAssertFalse(isValid)

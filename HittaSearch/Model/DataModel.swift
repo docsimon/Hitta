@@ -22,8 +22,9 @@ enum ErrorType: Error {
 
 enum Result<T> {
     case Success(result: T)
+    // future cases
+    
 }
-
 
 // Json Data Structure
 

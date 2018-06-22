@@ -14,7 +14,7 @@ import Foundation
 
 // The Client connects to the remote endpoint, fetches the JSON and deserialize it. The result can be a struct with the deserialized data on success, or an error (Result<T> type)
 
-class Client {
+class Client<T: Decodable> {
     
     let session: URLSessionProtocol
     let request: URLRequest
@@ -24,7 +24,7 @@ class Client {
         self.request = request
     }
     
-    func getData(request: URLRequest, completion: @escaping (_ result: () throws -> Result<SearchResult>) -> Void ){
+    func getData(request: URLRequest, completion: @escaping (_ result: () throws -> T) -> () ){
         
         session.dataTask(with: request, completionHandler: {data, response, error in
             
@@ -60,11 +60,12 @@ class Client {
             }
             
             do{
-                let parser = Parser<SearchResult>(data: data)
+                let parser = Parser<T>(data: data)
                 let result = try parser.parse()
                 completion(
                     {
-                        return Result.Success(result: result)
+                        //return Result.Success(result: result)
+                        return result
                     }
                 )
             }catch {
