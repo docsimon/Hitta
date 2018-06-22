@@ -11,6 +11,26 @@ import XCTest
 
 class NetworkingTests: XCTestCase {
     
+    var data: Data?
+    
+    override func setUp() {
+        super.setUp()
+        let bundle = Bundle(for: type(of: self))
+        guard let url = bundle.url(forResource: "Hitta", withExtension: "json") else {
+            XCTFail("No file found")
+            return
+        }
+        do {
+            let tmpData = try Data(contentsOf: url)
+            data = tmpData
+        }catch {
+            XCTFail("Serialized data received is invalid")
+        }
+        
+    }
+    
+    
+    
     // Check if the local json file is loaded correctly
     func testLoadingDataFromLocalJson(){
         let bundle = Bundle(for: type(of: self))
@@ -64,4 +84,144 @@ class NetworkingTests: XCTestCase {
         }).resume()
         wait(for: [expectation], timeout: 5.0)
     }
+    
+    func testSuccessParsing(){
+        
+        guard let data = data else {
+            XCTFail("Data input is invalid")
+            return
+        }
+        
+        let parser = Parser<SearchResult>(data: data)
+        do {
+            let searchResult = try parser.parse()
+            let companyName = searchResult.result.companies.company[0].displayName
+            let street = searchResult.result.companies.company[0].address[0].street
+            let city = searchResult.result.companies.company[0].address[0].city
+            
+            XCTAssertTrue(companyName == "Ica Maxi Special AB")
+            XCTAssertTrue(street == "Gamla Flygplatsvägen")
+            XCTAssertTrue(city == "Torslanda")
+            
+        }
+        catch{
+            XCTFail(error.localizedDescription)
+        }
+        
+    }
+    
+    // Making the Parser thrown
+    func testUnsuccessfullParsing(){
+        struct MockDecodable: Decodable {
+            let testItem: String
+        }
+        guard let data = data else {
+            XCTFail("Data input is invalid")
+            return
+        }
+        let parser = Parser<MockDecodable>(data: data)
+        do {
+            let _ = try parser.parse()
+            XCTFail("The function didn't thrown. That's bad")
+        }
+        catch{
+            // Function successfully threw
+        }
+    }
+    
+    // Testing the Client
+    
+    func testClientReturnsValidResult(){
+        
+        // Create the MockURLSession with mock data
+        let apiUrl = URL(string: "https://www.hitta.se")!
+        let request = URLRequest(url: apiUrl)
+        let statusCode = 200
+        let mockResponse = HTTPURLResponse.init(url: apiUrl, statusCode: statusCode, httpVersion: nil, headerFields: nil)
+        let mockSession = MockURLSession(data: data, response: mockResponse, error: nil)
+        
+        
+        let expectation = XCTestExpectation(description: "Testing Mock Client Session")
+        let client = Client(session: mockSession, request: request)
+        client.getData(request: request, completion: { resultClosure in
+            do {
+                let result = try resultClosure()
+                
+                switch (result) {
+                case .Success(let searchResult):
+                    let companyName = searchResult.result.companies.company[0].displayName
+                    let street = searchResult.result.companies.company[0].address[0].street
+                    let city = searchResult.result.companies.company[0].address[0].city
+                    XCTAssertTrue(companyName == "Ica Maxi Special AB")
+                    XCTAssertTrue(street == "Gamla Flygplatsvägen")
+                    XCTAssertTrue(city == "Torslanda")
+                    
+                case .Error(errorType: let error):
+                    XCTFail("Shouldn't fail just now \(error.localizedDescription)")
+                }
+                
+            }catch {
+                XCTFail("Shouldn't fail here \(error.localizedDescription)")
+            }
+            expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
+    // Testing if the Client return a client error
+    func testClientReturnsAClientError(){
+        
+        // Create the MockURLSession with mock data
+        let apiUrl = URL(string: "https://www.hitta.se")!
+        let request = URLRequest(url: apiUrl)
+        let errorLocalizedDescription = "This is a Client error test"
+        let mockError = NSError(domain: "Test Error", code: 0, userInfo: [ NSLocalizedDescriptionKey: errorLocalizedDescription])
+        let mockSession = MockURLSession(data: nil, response: nil, error: mockError)
+        
+        
+        let expectation = XCTestExpectation(description: "Testing Mock Client Session")
+        let client = Client(session: mockSession, request: request)
+        client.getData(request: request, completion: { resultClosure in
+            do {
+                let _ = try resultClosure()
+                XCTFail("Shouldn't reach this point")
+            }catch {
+            
+                XCTAssertTrue(clientError.localizedDescription == "This is a Client error test")
+            }
+            expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
+    // Testing the Client if the Parser throws
+    func testClientReturnsNotValidResult(){
+        
+        // Create the MockURLSession with mock data
+        let apiUrl = URL(string: "https://www.hitta.se")!
+        let request = URLRequest(url: apiUrl)
+        let statusCode = 200
+        let mockResponse = HTTPURLResponse.init(url: apiUrl, statusCode: statusCode, httpVersion: nil, headerFields: nil)
+        
+        let mockData = "This is not the correct json format".data(using: .utf8)
+        let mockSession = MockURLSession(data: mockData, response: mockResponse, error: nil)
+        
+        
+        let expectation = XCTestExpectation(description: "Testing Mock Client Session")
+        let client = Client(session: mockSession, request: request)
+        client.getData(request: request, completion: { resultClosure in
+            do {
+                let result = try resultClosure()
+                
+                    XCTFail("Shouldn't reach this point")
+
+                
+            }catch {
+                XCTAssert(true, "Should fail with error here: \(error.localizedDescription)")
+            }
+            expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
 }

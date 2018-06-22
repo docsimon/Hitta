@@ -50,13 +50,29 @@ class Client {
             }
             
             // Data Error Check
-            guard let _ = data else {
+            guard let data = data else {
                 completion(
                     {
                         throw  ErrorType.DataError(error: Constants.ErrorMessages.DataErrors.InvalidDataReceived)
                     }
                 )
                 return
+            }
+            
+            do{
+                let parser = Parser<SearchResult>(data: data)
+                let result = try parser.parse()
+                completion(
+                    {
+                        return Result.Success(result: result)
+                    }
+                )
+            }catch {
+                completion (
+                    {
+                        throw ErrorType.ParsingError(error: error)
+                    }
+                )
             }
             
         }).resume()

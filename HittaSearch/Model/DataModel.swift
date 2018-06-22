@@ -14,7 +14,7 @@ enum ErrorType: Error {
     case ClientError(error: Error)
     case ServerError(statusCode: Int)
     case DataError(error: String)
-    case ParsingError(error: String)
+    case ParsingError(error: Error)
     case DefaultError(error: String)
 }
 

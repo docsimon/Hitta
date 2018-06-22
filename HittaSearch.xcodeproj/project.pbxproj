@@ -10,6 +10,7 @@
 		CA64BD4C20DCF679008CDC8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD4B20DCF679008CDC8D /* Constants.swift */; };
 		CA64BD5420DCFA06008CDC8D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD5320DCFA06008CDC8D /* NetworkingTests.swift */; };
 		CA64BD5B20DCFC4A008CDC8D /* Hitta.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC994B320DC3407005B259D /* Hitta.json */; };
+		CA64BD5D20DD0576008CDC8D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD5C20DD0576008CDC8D /* Parser.swift */; };
 		CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947220DBF842005B259D /* AppDelegate.swift */; };
 		CAC9947520DBF842005B259D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947420DBF842005B259D /* ViewController.swift */; };
 		CAC9947820DBF842005B259D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947620DBF842005B259D /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		CA64BD5120DCFA06008CDC8D /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA64BD5320DCFA06008CDC8D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		CA64BD5520DCFA06008CDC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA64BD5C20DD0576008CDC8D /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		CAC9946F20DBF842005B259D /* HittaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HittaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC9947220DBF842005B259D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC9947420DBF842005B259D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				CAC994AF20DBFBB7005B259D /* Client.swift */,
 				CAC994B120DBFCB8005B259D /* DataModel.swift */,
 				CA64BD4B20DCF679008CDC8D /* Constants.swift */,
+				CA64BD5C20DD0576008CDC8D /* Parser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			files = (
 				CAC994AE20DBFB22005B259D /* MockURLSession.swift in Sources */,
 				CAC994B020DBFBB7005B259D /* Client.swift in Sources */,
+				CA64BD5D20DD0576008CDC8D /* Parser.swift in Sources */,
 				CAC994A820DBFA9D005B259D /* URLSessionProtocol.swift in Sources */,
 				CAC9947520DBF842005B259D /* ViewController.swift in Sources */,
 				CAC994AA20DBFACB005B259D /* URLSessionDataTaskProtocol.swift in Sources */,
