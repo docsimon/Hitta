@@ -22,7 +22,6 @@ enum ErrorType: Error {
 
 enum Result<T> {
     case Success(result: T)
-    case Error(errorType: ErrorType)
 }
 
 

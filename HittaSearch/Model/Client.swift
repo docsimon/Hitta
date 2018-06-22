@@ -82,7 +82,7 @@ class Client {
 
 extension Client {
     // Helper functions
-    func statusCodeIsValid(code: Int) -> Bool {
+   internal func statusCodeIsValid(code: Int) -> Bool {
         let validCodes = Constants.HttpStatusCodes.Codes
         guard validCodes.contains(code) else {
             return false

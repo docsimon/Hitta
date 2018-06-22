@@ -155,11 +155,12 @@ class NetworkingTests: XCTestCase {
                     XCTAssertTrue(companyName == "Ica Maxi Special AB")
                     XCTAssertTrue(street == "Gamla Flygplatsvägen")
                     XCTAssertTrue(city == "Torslanda")
-                    
-                case .Error(errorType: let error):
-                    XCTFail("Shouldn't fail just now \(error.localizedDescription)")
                 }
-                
+//
+//                case .Error(errorType: let error):
+//                    XCTFail("Shouldn't fail just now \(error.localizedDescription)")
+//                }
+//
             }catch {
                 XCTFail("Shouldn't fail here \(error.localizedDescription)")
             }
@@ -185,9 +186,62 @@ class NetworkingTests: XCTestCase {
             do {
                 let _ = try resultClosure()
                 XCTFail("Shouldn't reach this point")
-            }catch {
-            
+            }catch ErrorType.ClientError(let clientError){
                 XCTAssertTrue(clientError.localizedDescription == "This is a Client error test")
+            }catch {
+                XCTFail("Shouldn't reach this point")
+            }
+            expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
+    //Testing Server Error
+    func testClientReturnsAServerError(){
+        
+        // Create the MockURLSession with mock data
+        let apiUrl = URL(string: "https://www.hitta.se")!
+        let request = URLRequest(url: apiUrl)
+        let statusCode = 404
+        let mockResponse = HTTPURLResponse.init(url: apiUrl, statusCode: statusCode, httpVersion: nil, headerFields: nil)
+        let mockSession = MockURLSession(data: nil, response: mockResponse, error: nil)
+        
+        let expectation = XCTestExpectation(description: "Testing Mock Client Session")
+        let client = Client(session: mockSession, request: request)
+        client.getData(request: request, completion: { resultClosure in
+            do {
+                let _ = try resultClosure()
+                XCTFail("Shouldn't reach this point")
+            }catch ErrorType.ServerError(let code){
+                XCTAssertTrue(code == statusCode)
+            }catch {
+                XCTFail("Shouldn't reach this point")
+            }
+            expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
+    //Testing Data Error
+    func testClientReturnsDataError(){
+        
+        // Create the MockURLSession with mock data
+        let apiUrl = URL(string: "https://www.hitta.se")!
+        let request = URLRequest(url: apiUrl)
+        let statusCode = 200
+        let mockResponse = HTTPURLResponse.init(url: apiUrl, statusCode: statusCode, httpVersion: nil, headerFields: nil)
+        let mockSession = MockURLSession(data: nil, response: mockResponse, error: nil)
+        
+        let expectation = XCTestExpectation(description: "Testing Mock Client Session")
+        let client = Client(session: mockSession, request: request)
+        client.getData(request: request, completion: { resultClosure in
+            do {
+                let _ = try resultClosure()
+                XCTFail("Shouldn't reach this point")
+            }catch ErrorType.DataError(let wrongDataMsg){
+                XCTAssertTrue(wrongDataMsg == Constants.ErrorMessages.DataErrors.InvalidDataReceived)
+            }catch {
+                XCTFail("Shouldn't reach this point")
             }
             expectation.fulfill()
         })
@@ -211,10 +265,9 @@ class NetworkingTests: XCTestCase {
         let client = Client(session: mockSession, request: request)
         client.getData(request: request, completion: { resultClosure in
             do {
-                let result = try resultClosure()
+                let _ = try resultClosure()
                 
-                    XCTFail("Shouldn't reach this point")
-
+                XCTFail("Shouldn't reach this point")
                 
             }catch {
                 XCTAssert(true, "Should fail with error here: \(error.localizedDescription)")
@@ -224,4 +277,24 @@ class NetworkingTests: XCTestCase {
         wait(for: [expectation], timeout: 5.0)
     }
     
+    func testStatuCodeFunctionIsValid(){
+        // Valid test
+        let apiUrl = URL(string: "https://www.hitta.se")!
+        let request = URLRequest(url: apiUrl)
+        let client = Client(request: request)
+        let code = 200
+        let isValid = client.statusCodeIsValid(code: code)
+        XCTAssertTrue(isValid)
+       
+    }
+    
+    func testStatuCodeFunctionIsNotValid(){
+        // Not Valid test
+        let apiUrl = URL(string: "https://www.hitta.se")!
+        let request = URLRequest(url: apiUrl)
+        let client = Client(request: request)
+        let code = 404
+        let isValid = client.statusCodeIsValid(code: code)
+        XCTAssertFalse(isValid)
+    }
 }
