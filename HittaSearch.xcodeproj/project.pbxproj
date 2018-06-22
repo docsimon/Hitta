@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525C10F5010A638D3ADDCD7B /* Pods_HittaSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD29CA8EBD25A0AB577E2F9 /* Pods_HittaSearch.framework */; };
 		CA64BD4C20DCF679008CDC8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD4B20DCF679008CDC8D /* Constants.swift */; };
 		CA64BD5420DCFA06008CDC8D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD5320DCFA06008CDC8D /* NetworkingTests.swift */; };
 		CA64BD5B20DCFC4A008CDC8D /* Hitta.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC994B320DC3407005B259D /* Hitta.json */; };
@@ -16,6 +17,7 @@
 		CA9B5B2D20DD67A700C5442C /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B2C20DD67A700C5442C /* ErrorManager.swift */; };
 		CA9B5B2F20DD6A2500C5442C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B2E20DD6A2500C5442C /* Protocols.swift */; };
 		CA9B5B3020DD7B3A00C5442C /* Hitta.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC994B320DC3407005B259D /* Hitta.json */; };
+		CA9B5B3220DD949D00C5442C /* SearchNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B3120DD949D00C5442C /* SearchNodeController.swift */; };
 		CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947220DBF842005B259D /* AppDelegate.swift */; };
 		CAC9947520DBF842005B259D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947420DBF842005B259D /* ViewController.swift */; };
 		CAC9947820DBF842005B259D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947620DBF842005B259D /* Main.storyboard */; };
@@ -57,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5327C7B58B3D6F5DE2BBAB /* Pods_HittaSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HittaSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9180BD8FC8F3D880AB6781D3 /* Pods_HittaSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HittaSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B928A986C906DD2C3E21AF53 /* Pods-HittaSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HittaSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HittaSearch/Pods-HittaSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		BC133CDCC6D095CBA0AF252A /* Pods-HittaSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HittaSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-HittaSearch/Pods-HittaSearch.release.xcconfig"; sourceTree = "<group>"; };
 		CA64BD4B20DCF679008CDC8D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CA64BD5120DCFA06008CDC8D /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA64BD5320DCFA06008CDC8D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 		CA9B5B2A20DD4DFF00C5442C /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		CA9B5B2C20DD67A700C5442C /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		CA9B5B2E20DD6A2500C5442C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = NetworkingTests/Protocols.swift; sourceTree = SOURCE_ROOT; };
+		CA9B5B3120DD949D00C5442C /* SearchNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNodeController.swift; sourceTree = "<group>"; };
 		CAC9946F20DBF842005B259D /* HittaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HittaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC9947220DBF842005B259D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC9947420DBF842005B259D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 		CAC994AF20DBFBB7005B259D /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		CAC994B120DBFCB8005B259D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		CAC994B320DC3407005B259D /* Hitta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hitta.json; sourceTree = "<group>"; };
+		CAD29CA8EBD25A0AB577E2F9 /* Pods_HittaSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HittaSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525C10F5010A638D3ADDCD7B /* Pods_HittaSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +129,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64868F426C75404B4FA96C71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9180BD8FC8F3D880AB6781D3 /* Pods_HittaSearchTests.framework */,
+				0B5327C7B58B3D6F5DE2BBAB /* Pods_HittaSearchUITests.framework */,
+				CAD29CA8EBD25A0AB577E2F9 /* Pods_HittaSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA64BD5220DCFA06008CDC8D /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +156,8 @@
 				CAC9949120DBF844005B259D /* HittaSearchUITests */,
 				CA64BD5220DCFA06008CDC8D /* NetworkingTests */,
 				CAC9947020DBF842005B259D /* Products */,
+				DD7FE07FF8A8EDDCCF9EDBF0 /* Pods */,
+				64868F426C75404B4FA96C71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +227,7 @@
 			children = (
 				CAC9947420DBF842005B259D /* ViewController.swift */,
 				CA9B5B2C20DD67A700C5442C /* ErrorManager.swift */,
+				CA9B5B3120DD949D00C5442C /* SearchNodeController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +257,15 @@
 			path = TestModel;
 			sourceTree = "<group>";
 		};
+		DD7FE07FF8A8EDDCCF9EDBF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B928A986C906DD2C3E21AF53 /* Pods-HittaSearch.debug.xcconfig */,
+				BC133CDCC6D095CBA0AF252A /* Pods-HittaSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAC9949720DBF844005B259D /* Build configuration list for PBXNativeTarget "HittaSearch" */;
 			buildPhases = (
+				7A0C8B9200B1F2E191AC4B9E /* [CP] Check Pods Manifest.lock */,
 				CAC9946B20DBF842005B259D /* Sources */,
 				CAC9946C20DBF842005B259D /* Frameworks */,
 				CAC9946D20DBF842005B259D /* Resources */,
+				AEADDB4C2D1C5A09F7064388 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,6 +427,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7A0C8B9200B1F2E191AC4B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HittaSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEADDB4C2D1C5A09F7064388 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HittaSearch/Pods-HittaSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HittaSearch/Pods-HittaSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA64BD4D20DCFA06008CDC8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -407,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9B5B3220DD949D00C5442C /* SearchNodeController.swift in Sources */,
 				CA9B5B2920DD4CEF00C5442C /* SearchViewModel.swift in Sources */,
 				CAC994AE20DBFB22005B259D /* MockURLSession.swift in Sources */,
 				CA9B5B2D20DD67A700C5442C /* ErrorManager.swift in Sources */,
@@ -636,6 +715,7 @@
 		};
 		CAC9949820DBF844005B259D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B928A986C906DD2C3E21AF53 /* Pods-HittaSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -654,6 +734,7 @@
 		};
 		CAC9949920DBF844005B259D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC133CDCC6D095CBA0AF252A /* Pods-HittaSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
