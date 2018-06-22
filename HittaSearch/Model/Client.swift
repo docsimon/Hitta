@@ -64,14 +64,13 @@ class Client<T: Decodable> {
                 let result = try parser.parse()
                 completion(
                     {
-                        //return Result.Success(result: result)
                         return result
                     }
                 )
             }catch {
                 completion (
                     {
-                        throw ErrorType.ParsingError(error: error)
+                        throw error
                     }
                 )
             }

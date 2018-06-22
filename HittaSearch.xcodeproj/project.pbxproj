@@ -15,6 +15,7 @@
 		CA9B5B2B20DD4DFF00C5442C /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B2A20DD4DFF00C5442C /* CellViewModel.swift */; };
 		CA9B5B2D20DD67A700C5442C /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B2C20DD67A700C5442C /* ErrorManager.swift */; };
 		CA9B5B2F20DD6A2500C5442C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B2E20DD6A2500C5442C /* Protocols.swift */; };
+		CA9B5B3020DD7B3A00C5442C /* Hitta.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC994B320DC3407005B259D /* Hitta.json */; };
 		CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947220DBF842005B259D /* AppDelegate.swift */; };
 		CAC9947520DBF842005B259D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947420DBF842005B259D /* ViewController.swift */; };
 		CAC9947820DBF842005B259D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947620DBF842005B259D /* Main.storyboard */; };
@@ -380,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9B5B3020DD7B3A00C5442C /* Hitta.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

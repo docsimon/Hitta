@@ -28,7 +28,7 @@ class SearchViewModel{
             return
         }
         let request = URLRequest(url: url)
-        let client = Client<SearchResult>(request: request)
+        let client = Client<SearchResult>(session: session, request: request)
         client.getData(completion: { resultClosure in
             do{
                 let result = try resultClosure()

@@ -10,12 +10,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkingTests/NetworkingTests.swift"
-            timestampString = "551382740.399601"
+            timestampString = "551388791.765609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "268"
             endingLineNumber = "268"
             landmarkName = "testClientReturnsNotValidResult()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HittaSearchTests/HittaSearchTests.swift"
+            timestampString = "551388791.76586"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "updateViewController(result:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HittaSearchTests/HittaSearchTests.swift"
+            timestampString = "551388791.7664371"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "displayError(errorData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "displayError(errorData: HittaSearch.ErrorData) -&gt; () in Receiver #1 in HittaSearchTests.HittaSearchTests.testGetSearchDataDataParsingError() -&gt; ()"
+                  moduleName = "HittaSearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/doc/MyProjects/iOS/HittaSearch/HittaSearchTests/HittaSearchTests.swift"
+                  timestampString = "551387820.2880549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "234">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Bool in displayError(errorData: HittaSearch.ErrorData) -&gt; () in Receiver #1 in HittaSearchTests.HittaSearchTests.testGetSearchDataDataParsingError() -&gt; ()"
+                  moduleName = "HittaSearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/doc/MyProjects/iOS/HittaSearch/HittaSearchTests/HittaSearchTests.swift"
+                  timestampString = "551387820.29115"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HittaSearch/ViewModel/SearchViewModel.swift"
+            timestampString = "551388791.76687"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getSearchData(session:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
