@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CA64BD4C20DCF679008CDC8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD4B20DCF679008CDC8D /* Constants.swift */; };
 		CA64BD5420DCFA06008CDC8D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BD5320DCFA06008CDC8D /* NetworkingTests.swift */; };
+		CA64BD5B20DCFC4A008CDC8D /* Hitta.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC994B320DC3407005B259D /* Hitta.json */; };
 		CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947220DBF842005B259D /* AppDelegate.swift */; };
 		CAC9947520DBF842005B259D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947420DBF842005B259D /* ViewController.swift */; };
 		CAC9947820DBF842005B259D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947620DBF842005B259D /* Main.storyboard */; };
@@ -345,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA64BD5B20DCFC4A008CDC8D /* Hitta.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
