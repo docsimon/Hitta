@@ -13,9 +13,16 @@ import AsyncDisplayKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // UIWindow
+        
+        let searchTableNodeController = SearchNodeController()
+        window = UIWindow()
+        window?.backgroundColor = .white
+        window?.rootViewController = searchTableNodeController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 }

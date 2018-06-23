@@ -17,10 +17,9 @@
 		CA9B5B2D20DD67A700C5442C /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B2C20DD67A700C5442C /* ErrorManager.swift */; };
 		CA9B5B2F20DD6A2500C5442C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B2E20DD6A2500C5442C /* Protocols.swift */; };
 		CA9B5B3020DD7B3A00C5442C /* Hitta.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC994B320DC3407005B259D /* Hitta.json */; };
-		CA9B5B3220DD949D00C5442C /* SearchNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B3120DD949D00C5442C /* SearchNodeController.swift */; };
+		CA9B5B3220DD949D00C5442C /* SearchTableNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B5B3120DD949D00C5442C /* SearchTableNodeController.swift */; };
+		CAAEE0A420DE5A5900E4A1C4 /* SearchTableNodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAEE0A320DE5A5900E4A1C4 /* SearchTableNodeCell.swift */; };
 		CAC9947320DBF842005B259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947220DBF842005B259D /* AppDelegate.swift */; };
-		CAC9947520DBF842005B259D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9947420DBF842005B259D /* ViewController.swift */; };
-		CAC9947820DBF842005B259D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947620DBF842005B259D /* Main.storyboard */; };
 		CAC9947A20DBF843005B259D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947920DBF843005B259D /* Assets.xcassets */; };
 		CAC9947D20DBF843005B259D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */; };
 		CAC9948820DBF844005B259D /* HittaSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9948720DBF844005B259D /* HittaSearchTests.swift */; };
@@ -72,11 +71,10 @@
 		CA9B5B2A20DD4DFF00C5442C /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		CA9B5B2C20DD67A700C5442C /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		CA9B5B2E20DD6A2500C5442C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = NetworkingTests/Protocols.swift; sourceTree = SOURCE_ROOT; };
-		CA9B5B3120DD949D00C5442C /* SearchNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNodeController.swift; sourceTree = "<group>"; };
+		CA9B5B3120DD949D00C5442C /* SearchTableNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableNodeController.swift; sourceTree = "<group>"; };
+		CAAEE0A320DE5A5900E4A1C4 /* SearchTableNodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableNodeCell.swift; sourceTree = "<group>"; };
 		CAC9946F20DBF842005B259D /* HittaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HittaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC9947220DBF842005B259D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAC9947420DBF842005B259D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAC9947720DBF842005B259D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAC9947920DBF843005B259D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC9947C20DBF843005B259D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAC9947E20DBF843005B259D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				CAC9947220DBF842005B259D /* AppDelegate.swift */,
-				CAC9947620DBF842005B259D /* Main.storyboard */,
 				CAC9947920DBF843005B259D /* Assets.xcassets */,
 				CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */,
 			);
@@ -225,9 +222,9 @@
 		CAC994A220DBF895005B259D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CAC9947420DBF842005B259D /* ViewController.swift */,
 				CA9B5B2C20DD67A700C5442C /* ErrorManager.swift */,
-				CA9B5B3120DD949D00C5442C /* SearchNodeController.swift */,
+				CA9B5B3120DD949D00C5442C /* SearchTableNodeController.swift */,
+				CAAEE0A320DE5A5900E4A1C4 /* SearchTableNodeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,7 +403,6 @@
 				CAC994B420DC3407005B259D /* Hitta.json in Resources */,
 				CAC9947D20DBF843005B259D /* LaunchScreen.storyboard in Resources */,
 				CAC9947A20DBF843005B259D /* Assets.xcassets in Resources */,
-				CAC9947820DBF842005B259D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,14 +481,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9B5B3220DD949D00C5442C /* SearchNodeController.swift in Sources */,
+				CA9B5B3220DD949D00C5442C /* SearchTableNodeController.swift in Sources */,
 				CA9B5B2920DD4CEF00C5442C /* SearchViewModel.swift in Sources */,
 				CAC994AE20DBFB22005B259D /* MockURLSession.swift in Sources */,
 				CA9B5B2D20DD67A700C5442C /* ErrorManager.swift in Sources */,
 				CAC994B020DBFBB7005B259D /* Client.swift in Sources */,
 				CA64BD5D20DD0576008CDC8D /* Parser.swift in Sources */,
 				CAC994A820DBFA9D005B259D /* URLSessionProtocol.swift in Sources */,
-				CAC9947520DBF842005B259D /* ViewController.swift in Sources */,
+				CAAEE0A420DE5A5900E4A1C4 /* SearchTableNodeCell.swift in Sources */,
 				CAC994AA20DBFACB005B259D /* URLSessionDataTaskProtocol.swift in Sources */,
 				CAC994B220DBFCB8005B259D /* DataModel.swift in Sources */,
 				CA9B5B2F20DD6A2500C5442C /* Protocols.swift in Sources */,
@@ -540,14 +536,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAC9947620DBF842005B259D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAC9947720DBF842005B259D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAC9947B20DBF843005B259D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

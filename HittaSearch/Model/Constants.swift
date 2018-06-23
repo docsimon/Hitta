@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Constants {
     
@@ -28,7 +29,6 @@ struct Constants {
         static let UnknownErrorTitle = "Unknown Error"
         static let UnknownErrorFrom = "Id: "
         
-        
     }
     
     // MARK: API
@@ -42,5 +42,14 @@ struct Constants {
             static let dismissButton = "Dismiss"
             static let reloadButton = "Reload"
         }
+    }
+    
+    // MARK: Cell layout
+    struct CellLayout {
+        static let DistanceFromImage: CGFloat = 5
+        static let ImageHeight: CGFloat = 50
+        static let ImageWidth: CGFloat = 50
+        static let TitleFontSize: CGFloat = 15
+        static let DescriptionFontSize: CGFloat = 14
     }
 }

@@ -16,7 +16,7 @@ protocol ErrorControllerProtocol {
     func fetchData()
 }
 
-struct ErrorManager {
+class ErrorManager {
     
     var delegate: ErrorControllerProtocol?
     
