@@ -181,5 +181,32 @@ class HittaSearchTests: XCTestCase {
         viewModel.delegate = receiver
         viewModel.getSearchData(session: mockSession)
     }
+    
+    func testCellViewModelSuccessInit(){
+        let company = Company(displayName: "Test Title", address: [Address(city: "London", street: "Oxford Street")])
+        guard let cellViewModel = CellViewModel(company: company) else {
+            XCTFail()
+            return
+        }
+        XCTAssertTrue(cellViewModel.companyTitle == "Test Title")
+        XCTAssertTrue(cellViewModel.companyDescription == "Oxford Street, London")
+    }
+    
+    func testCellViewModelFailInitWhenTitleIsEmpty(){
+        let company = Company(displayName: "", address: [Address(city: "London", street: "Oxford Street")])
+        guard let _ = CellViewModel(company: company) else {
+            return
+        }
+        XCTFail("The initialization of CellViewModel should have failed")
+    }
+    
+    func testCellViewModelFailInitWhenAddressIsEmpty(){
+        let company = Company(displayName: "Test Title", address: [])
+        guard let _ = CellViewModel(company: company) else {
+            return
+        }
+        XCTFail("The initialization of CellViewModel should have failed")
+    }
+    
 }
 
